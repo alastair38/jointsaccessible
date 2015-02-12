@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Find out more here: www.jointswp.com  
 Demo: www.jointswp.com/demo
 
@@ -19,3 +20,6 @@ From the command line, navigate to your main theme directory. Then run:
 `bower update`
 
 That's it! You should see bower go through and update your packages to their newest version.
+=======
+# jointsaccessible
+>>>>>>> Alastair/master
