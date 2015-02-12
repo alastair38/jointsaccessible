@@ -1,6 +1,6 @@
 <div class="large-12 columns show-for-medium-up">
 	<div class="sticky contain-to-grid">
-		<nav class="top-bar" data-topbar>
+		<nav class="top-bar" role="navigation" data-topbar>
 			<ul class="title-area">
 				<!-- Title Area -->
 				<li class="name">
@@ -16,7 +16,7 @@
 <!-- This is the nav that will show for mobile/small devices -->
 <div class="large-12 columns show-for-small-only">
 	<div class="contain-to-grid">
-		<nav class="tab-bar">
+		<nav class="tab-bar" role="navigation">
 			<section class="middle tab-bar-section">
 				<h1 class="title"><?php bloginfo('name'); ?></h1>
 			</section>

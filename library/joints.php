@@ -304,11 +304,22 @@ add_filter( "nav_menu_css_class", "nav_menu_item_parent_classing", 10, 2 );
 
 //Deletes empty classes and changes the sub menu class name
     function change_submenu_class($menu) {
-        $menu = preg_replace('/ class="sub-menu"/',' class="dropdown"',$menu);
+        $menu = preg_replace('/ class="sub-menu"/',' class="dropdown" aria-hidden="true" aria-label="This is the sub menu"',$menu);
         return $menu;
     }
     add_filter ('wp_nav_menu','change_submenu_class');
 
+
+//Adds aria support to menu items with a submenu (ie dropdowns)
+add_filter( 'nav_menu_link_attributes', 'menu_add_aria_haspopup_atts', 10, 3 );
+function menu_add_aria_haspopup_atts( $atts, $item, $args ) {
+  if (in_array('menu-item-has-children', $item->classes)) {
+    $atts['aria-haspopup'] = 'true';
+    $atts['aria-label'] = 'This link has the following sub items';
+  }
+
+  return $atts;
+}
 
 //Use the active class of the ZURB Foundation for the current menu item. (From: https://github.com/milohuang/reverie/blob/master/functions.php)
 function required_active_nav_class( $classes, $item ) {
