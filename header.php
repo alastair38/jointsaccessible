@@ -33,6 +33,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+	    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 		<div class="off-canvas-wrap" data-offcanvas>
 			<div class="inner-wrap">
 				<div id="container">
