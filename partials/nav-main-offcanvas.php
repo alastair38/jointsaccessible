@@ -1,5 +1,5 @@
 <div class="large-12 columns show-for-medium-up">
-	<div class="sticky contain-to-grid">
+	<div class="fixed contain-to-grid">
 		<nav class="top-bar" role="navigation" data-topbar>
 			<ul class="title-area">
 				<!-- Title Area -->

@@ -18,11 +18,7 @@ jQuery(document).ready(function($) {
     $('.comment img[data-gravatar]').each(function(){
         $(this).attr('src',$(this).attr('data-gravatar'));
     });
-    
 
-// add all your scripts here
-	
- 
 }); /* end of as page load scripts */
 
 /**
@@ -51,7 +47,6 @@ jQuery(document).ready(function($) {
 		}, false );
 	}
 } )();
-
 
 /*! A fix for the iOS orientationchange zoom bug.
  Script by @scottjehl, rebound by @wilto.

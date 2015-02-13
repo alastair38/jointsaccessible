@@ -7,7 +7,7 @@
 			</li>
 		</ul>		
 		<section class="top-bar-section right">
-			<?php joints_top_nav(); ?>
+			<?php joints_main_nav(); ?>
 		</section>
 	</nav>
 </div>
@@ -26,7 +26,7 @@
 <aside class="left-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
 		<li><label>Navigation</label></li>
-			<?php joints_top_nav(); ?>    
+			<?php joints_main_nav(); ?>
 	</ul>
 </aside>
 			

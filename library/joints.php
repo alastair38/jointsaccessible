@@ -124,6 +124,9 @@ function joints_scripts_and_styles() {
    
     // register main stylesheet
     wp_enqueue_style( 'joints-stylesheet', get_template_directory_uri() . '/library/css/style.css', array(), $theme_version, 'all' );
+
+     // register accessible modal stylesheet
+    wp_enqueue_style( 'accessible-modal-stylesheet', get_template_directory_uri() . '/library/css/accessible-modal.css', array(), $theme_version, 'all' );
     
     // register foundation icons
     wp_enqueue_style( 'foundation-icons', get_template_directory_uri() . '/library/css/icons/foundation-icons.css', array(), $theme_version, 'all' );
@@ -135,6 +138,7 @@ function joints_scripts_and_styles() {
 
     //adding scripts file in the footer
     wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), $theme_version, true );
+    wp_enqueue_script( 'accessible-modal-js', get_template_directory_uri() . '/library/js/accessible-modal.js', array( 'jquery' ), $theme_version, true );
 
   }
 }

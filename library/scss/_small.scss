@@ -98,7 +98,19 @@ style a page via class
 	z-index: 100000;
 }
 
+#accessible {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 
+#accessible:focus {
+    color: tomato;
+}
+
+.fi-universal-access {
+    font-size: 3em;
+}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
