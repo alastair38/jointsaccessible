@@ -13,7 +13,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $oil !default;
+$topbar-bg-color: $ghost !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
@@ -25,18 +25,18 @@ $topbar-title-weight: $font-weight-normal !default;
 $topbar-title-font-size: rem-calc(17) !default;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $white !default;
-$topbar-link-color-hover: $white !default;
-$topbar-link-color-active: $white !default;
-$topbar-link-color-active-hover: $white !default;
+$topbar-link-color: $jet !default;
+$topbar-link-color-hover: $jet !default;
+$topbar-link-color-active: $jet !default;
+$topbar-link-color-active-hover: $jet !default;
 $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
 $topbar-link-bg-hover: $oil !default;
 $topbar-link-bg-color-hover: $charcoal !default;
-$topbar-link-bg-active: $primary-color !default;
-$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !default;
+$topbar-link-bg-active: $contrast-color !default;
+$topbar-link-bg-active-hover: scale-color($contrast-color, $lightness: -14%) !default;
 $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
 $topbar-link-padding: ($topbar-height / 3) !default;
@@ -46,14 +46,14 @@ $topbar-button-font-size: 0.75rem !default;
 $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $oil !default;
-$topbar-dropdown-link-color: $white !default;
+$topbar-dropdown-bg: $ghost !default;
+$topbar-dropdown-link-color: $jet !default;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover !default;
-$topbar-dropdown-link-bg: $oil !default;
-$topbar-dropdown-link-bg-hover: $oil !default;
+$topbar-dropdown-link-bg: $ghost !default;
+$topbar-dropdown-link-bg-hover: $ghost !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
 $topbar-dropdown-toggle-size: 5px !default;
-$topbar-dropdown-toggle-color: $white !default;
+$topbar-dropdown-toggle-color: $jet !default;
 $topbar-dropdown-toggle-alpha: 0.4 !default;
 
 $topbar-dropdown-label-color: $monsoon !default;
@@ -64,10 +64,10 @@ $topbar-dropdown-label-bg: $oil !default;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase !default;
-$topbar-menu-link-font-size: rem-calc(13) !default;
+$topbar-menu-link-font-size: rem-calc(15) !default;
 $topbar-menu-link-weight: $font-weight-bold !default;
-$topbar-menu-link-color: $white !default;
-$topbar-menu-icon-color: $white !default;
+$topbar-menu-link-color: $jet !default;
+$topbar-menu-icon-color: $jet !default;
 $topbar-menu-link-color-toggled: $jumbo !default;
 $topbar-menu-icon-color-toggled: $jumbo !default;
 $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon

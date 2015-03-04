@@ -5,7 +5,7 @@ Stylesheet: Main Stylesheet
 Here's where the magic happens. Here, you'll see we are calling in
 the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
-of the styles inside media queries.
+of the styles inside media queries. Default primary colour (bondi blue) has been darkened for better contrast
 ******************************************************************/
 
 @import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700";
@@ -112,7 +112,7 @@ Want to get fancy for no good reason? Knock yourself out.
 PRINT STYLESHEET
 Feel free to customize this. Remember to add things that won't make
 sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
+be set to display none. Add url of links using pseudo :after class
 */
 @media print {
 	@import "print";
