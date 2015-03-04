@@ -5,7 +5,8 @@ Stylesheet: Main Stylesheet
 Here's where the magic happens. Here, you'll see we are calling in
 the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
-of the styles inside media queries. Default primary colour (bondi blue) has been darkened for better contrast
+of the styles inside media queries. Default primary colour (bondi blue) has been darkened
+for better contrast and the default menu font size increased title-area tweaked a bit
 ******************************************************************/
 @import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -5010,11 +5011,11 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-size: 0.8125rem;
+      font-size: 0.9375rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
-        font-size: 0.8125rem;
+        font-size: 0.9375rem;
         padding-right: 0.9375rem;
         padding-left: 0.9375rem;
         background-color: #006080;
@@ -5057,7 +5058,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
           color: #FFFFFF; }
     .top-bar-section ul li > button {
-      font-size: 0.8125rem;
+      font-size: 0.9375rem;
       padding-right: 0.9375rem;
       padding-left: 0.9375rem;
       background-color: #006080;
@@ -5100,8 +5101,8 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-      background-color: #555555;
-      background: #333333;
+      background-color: #DDDDDD;
+      background: #DDDDDD;
       color: #222222; }
     .top-bar-section ul li.active > a {
       background: #f2f071;
@@ -5195,7 +5196,8 @@ meta.foundation-mq-topbar {
     .top-bar .toggle-topbar {
       display: none; }
     .top-bar .title-area {
-      float: left; }
+      float: left;
+      left: -8em; }
     .top-bar .name h1 a,
     .top-bar .name h2 a,
     .top-bar .name h3 a,
@@ -5230,16 +5232,16 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: #555555;
-      background: #333333;
+      background-color: #DDDDDD;
+      background: #DDDDDD;
       color: #222222; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 0.9375rem;
       line-height: 2.8125rem;
       background: #FAFAFA; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #333333; }
+        background-color: #DDDDDD;
+        background: #DDDDDD; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.9375rem;
       line-height: 2.8125rem;
@@ -5308,7 +5310,7 @@ meta.foundation-mq-topbar {
         background: #FAFAFA; }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: #222222;
-        background-color: #555555;
+        background-color: #DDDDDD;
         background: #FAFAFA; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
@@ -5339,8 +5341,8 @@ meta.foundation-mq-topbar {
         left: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #333333;
+    background-color: #DDDDDD;
+    background: #DDDDDD;
     color: #222222; }
   .no-js .top-bar-section ul li:active > a {
     background: #f2f071;
@@ -6860,7 +6862,7 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  padding: 4rem 0rem 1rem 0rem; }
 
 /* end .hentry */
 /* want to style individual post classes? Booya! */

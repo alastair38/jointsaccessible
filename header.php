@@ -45,14 +45,6 @@
 								 
 						<div id="inner-header" class="row">
 							<div class="large-12 medium-12 columns">
-								<h1>
-									<a href="<?php echo home_url(); ?>" rel="nofollow">
-										<?php bloginfo('name'); ?>
-									</a>
-									<small>
-										<?php  bloginfo('description'); ?>
-									</small>
-								</h1>
 							</div>
 							
 							 <!-- This navs will be applied to the main, under the logo 
