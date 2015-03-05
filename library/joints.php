@@ -120,12 +120,27 @@ function joints_scripts_and_styles() {
     
     // adding Foundation scripts file in the footer
     wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', array( 'jquery' ), $theme_version, true );
+
+    //adding joints script file in the footer
+    wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), $theme_version, true );
+
+    //adding accessible-modal script file in the footer
+    wp_enqueue_script( 'accessible-modal-js', get_template_directory_uri() . '/library/js/accessible-modal.js', array( 'jquery' ), $theme_version, true );
+
+      //adding slick.js cdn script file in the footer
+    wp_enqueue_script( 'slick-js', 'http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js', array( 'jquery' ), $theme_version, true );
+
+      //adding slick init script file in the footer
+    wp_enqueue_script( 'slick-init', get_template_directory_uri() . '/library/js/slick.js', array( 'slick-js' ), $theme_version, true );
    
     // register main stylesheet
     wp_enqueue_style( 'joints-stylesheet', get_template_directory_uri() . '/library/css/style.css', array(), $theme_version, 'all' );
 
      // register accessible modal stylesheet
     wp_enqueue_style( 'accessible-modal-stylesheet', get_template_directory_uri() . '/library/css/accessible-modal.css', array(), $theme_version, 'all' );
+
+       // register accessible modal stylesheet
+    wp_enqueue_style( 'slick-styles', get_template_directory_uri() . '/library/css/slick.css', array(), $theme_version, 'all' );
     
     // register foundation icons
     wp_enqueue_style( 'foundation-icons', get_template_directory_uri() . '/library/css/icons/foundation-icons.css', array(), $theme_version, 'all' );
@@ -134,10 +149,6 @@ function joints_scripts_and_styles() {
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
       wp_enqueue_script( 'comment-reply' );
     }
-
-    //adding scripts file in the footer
-    wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), $theme_version, true );
-    wp_enqueue_script( 'accessible-modal-js', get_template_directory_uri() . '/library/js/accessible-modal.js', array( 'jquery' ), $theme_version, true );
 
   }
 }

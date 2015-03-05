@@ -18,7 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.2.1",
     "acf": "https://github.com/elliotcondon/acf.git",
     "wpas": "https://github.com/growthspark/wp-advanced-search.git"
   },
