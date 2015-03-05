@@ -52,18 +52,20 @@
 								  
 							 <?php get_template_part( 'partials/nav', 'main-offcanvas' ); ?>
 
-<button id="accessible"><i class="fi-universal-access"></i></button>
+                            <button id="accessible"><i class="fi-universal-access"></i></button>
 
-<div id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" role="dialog">
-			<div id="modalDescription" class="screen-reader-offscreen">Beginning of dialog window. Escape will cancel and close the window.</div>
-			<h1 id="modalTitle">Accessibility Tips</h1>
-			<?php joints_main_nav(); ?>
+                            <div id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" role="dialog">
+                                <div id="modalDescription" class="screen-reader-offscreen">
+                                Beginning of dialog window. Escape will cancel and close the window.
+                                </div>
+                                <h1 id="modalTitle">Accessibility Tips</h1>
 
-				<button id="modalCloseButton" class="modalCloseButton" title="Close Accessibility Tips">Close</button>
+                                <?php joints_main_nav(); ?>
 
+                                <button id="modalCloseButton" class="modalCloseButton" title="Close Accessibility Tips"><span id="cancel">Close</span></button>
 
-        </div>
-        <div id="modalOverlay" tabindex="-1"></div>
+                            </div>
+                            <div id="modalOverlay" tabindex="-1"></div>
 
 						</div> <!-- end #inner-header -->
 
