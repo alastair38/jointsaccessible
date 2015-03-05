@@ -82,3 +82,8 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+// call cookieBar script
+jQuery(document).ready(function() {
+	jQuery.cookieBar();
+});

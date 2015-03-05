@@ -124,6 +124,9 @@ function joints_scripts_and_styles() {
     //adding joints script file in the footer
     wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), $theme_version, true );
 
+    //adding cookies script file in the footer
+    wp_enqueue_script( 'cookies-js', get_template_directory_uri() . '/library/js/cookies.js', array( 'jquery' ), $theme_version, true );
+
     //adding accessible-modal script file in the footer
     wp_enqueue_script( 'accessible-modal-js', get_template_directory_uri() . '/library/js/accessible-modal.js', array( 'jquery' ), $theme_version, true );
 
@@ -136,10 +139,13 @@ function joints_scripts_and_styles() {
     // register main stylesheet
     wp_enqueue_style( 'joints-stylesheet', get_template_directory_uri() . '/library/css/style.css', array(), $theme_version, 'all' );
 
+      // register cookies stylesheet
+    wp_enqueue_style( 'cookies-styles', get_template_directory_uri() . '/library/css/cookies.css', array(), $theme_version, 'all' );
+
      // register accessible modal stylesheet
     wp_enqueue_style( 'accessible-modal-stylesheet', get_template_directory_uri() . '/library/css/accessible-modal.css', array(), $theme_version, 'all' );
 
-       // register accessible modal stylesheet
+       // register slick.js stylesheet
     wp_enqueue_style( 'slick-styles', get_template_directory_uri() . '/library/css/slick.css', array(), $theme_version, 'all' );
     
     // register foundation icons
