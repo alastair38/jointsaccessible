@@ -33,7 +33,11 @@
       } else if (this.settings.open_method === 'overlap') {
         move_class = 'offcanvas-overlap';
       }
-
+     $('[href="#navigation"]').attr({
+			  'role': 'button',
+			  'aria-controls': 'navigation',
+			  'aria-expanded': 'false'
+			});
       S(this.scope).off('.offcanvas')
         .on('click.fndtn.offcanvas', '.left-off-canvas-toggle', function (e) {
           self.click_toggle_class(e, move_class + right_postfix);

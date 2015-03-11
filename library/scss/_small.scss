@@ -285,6 +285,9 @@ NAVIGATION STYLES
 .title-area h3{
     margin: 0 5em 0 -5em;
     padding: 5px 0px;
+   & a {
+       color: $ghost;
+   }
 }
 
 .off-canvas-list {
@@ -340,7 +343,7 @@ POSTS & CONTENT STYLES
 
 /* post meta */
 .byline {
-	color: #999;
+	color: $oil;
 	time {}
 }
 

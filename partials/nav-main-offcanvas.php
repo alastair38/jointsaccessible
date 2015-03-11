@@ -20,13 +20,13 @@
 				<h1 class="title"><?php bloginfo('name'); ?></h1>
 			</section>
 			<section class="left-small">
-				<a href="#" class="left-off-canvas-toggle menu-icon" aria-label="navigation menu" role="button" aria-controls="navigation" aria-expanded="false" ><span></span></a>
+				<a href="#navigation" class="left-off-canvas-toggle menu-icon" aria-label="navigation menu" ><span></span></a>
 			</section>
 		</nav>
 	</div>
 </div>
 						
-<aside class="left-off-canvas-menu show-for-small-only" role="navigation">
+<aside class="left-off-canvas-menu show-for-small-only" role="navigation" id="navigation">
 	<ul class="off-canvas-list">
 		<li><label>Navigation</label></li>
 			<?php joints_main_nav(); ?>    

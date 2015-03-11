@@ -83,12 +83,14 @@ The comments page for joints
 		  <label for="url"><?php _e("Website", "jointstheme"); ?></label>
 		  <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e('Got a website?', 'jointstheme'); ?>" tabindex="3" />
 		</li>
-		
-	</ul>
 
-	<?php endif; ?>
 	
+        <li>
+	<?php endif; ?>
+	<label for="comment"><?php _e("Comment", "jointstheme"); ?></label>
 	<p><textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'jointstheme'); ?>" tabindex="4"></textarea></p>
+        </li>
+        </ul>
 	
 	<p>
 	  <input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit', 'jointstheme'); ?>" />
