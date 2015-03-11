@@ -33,8 +33,8 @@ $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
-$topbar-link-bg-hover: $oil !default;
-$topbar-link-bg-color-hover: $charcoal !default;
+$topbar-link-bg-hover: scale-color($contrast-color, $lightness: -14%) !default;
+$topbar-link-bg-color-hover: scale-color($contrast-color, $lightness: -14%) !default;
 $topbar-link-bg-active: $contrast-color !default;
 $topbar-link-bg-active-hover: scale-color($contrast-color, $lightness: -14%) !default;
 $topbar-link-font-family: $body-font-family !default;
@@ -46,11 +46,11 @@ $topbar-button-font-size: 0.75rem !default;
 $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $ghost !default;
+$topbar-dropdown-bg: $ghost!default;
 $topbar-dropdown-link-color: $jet !default;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover !default;
 $topbar-dropdown-link-bg: $ghost !default;
-$topbar-dropdown-link-bg-hover: $ghost !default;
+$topbar-dropdown-link-bg-hover: $contrast-color !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
 $topbar-dropdown-toggle-size: 5px !default;
 $topbar-dropdown-toggle-color: $jet !default;
