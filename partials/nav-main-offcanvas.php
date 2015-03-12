@@ -1,9 +1,10 @@
 <div class="large-12 columns show-for-medium-up">
 	<div class="fixed contain-to-grid">
+	     <h3 class="site-title"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h3>
 		<nav class="top-bar" role="navigation" data-topbar>
-		    <span class="title-area">
-                <h3><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h3>
-            </span>
+
+
+
 			<section class="top-bar-section">
 
 				<?php joints_main_nav(); ?>

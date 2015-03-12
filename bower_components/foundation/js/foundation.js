@@ -5696,6 +5696,8 @@
         }
 
         // Pad body when sticky (scrolled) or fixed.
+        var fixedTopBarHeight = topbar.data('height') - 1;
+        topbar.data('height', fixedTopBarHeight );
         self.add_custom_rule('.f-topbar-fixed { padding-top: ' + topbar.data('height') + 'px }');
 
         if (topbarContainer.hasClass('fixed')) {

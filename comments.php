@@ -70,30 +70,30 @@ The comments page for joints
 		
 		<li>
 		  <label for="author"><?php _e("Name", "jointstheme"); ?> <?php if ($req) _e("(required)"); ?></label>
-		  <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e('Your Name*', 'jointstheme'); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+		  <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e('Your Name*', 'jointstheme'); ?>" tabindex="0" <?php if ($req) echo "aria-required='true'"; ?> />
 		</li>
 		
 		<li>
 		  <label for="email"><?php _e("Mail", "jointstheme"); ?> <?php if ($req) _e("(required)"); ?></label>
-		  <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e('Your E-Mail*', 'jointstheme'); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+		  <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e('Your E-Mail*', 'jointstheme'); ?>" tabindex="0" <?php if ($req) echo "aria-required='true'"; ?> />
 		  <small><?php _e("(will not be published)", "jointstheme"); ?></small>
 		</li>
 		
 		<li>
 		  <label for="url"><?php _e("Website", "jointstheme"); ?></label>
-		  <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e('Got a website?', 'jointstheme'); ?>" tabindex="3" />
+		  <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e('Got a website?', 'jointstheme'); ?>" tabindex="0" />
 		</li>
 
 	
         <li>
 	<?php endif; ?>
 	<label for="comment"><?php _e("Comment", "jointstheme"); ?></label>
-	<p><textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'jointstheme'); ?>" tabindex="4"></textarea></p>
+	<p><textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'jointstheme'); ?>" tabindex="0"></textarea></p>
         </li>
         </ul>
 	
 	<p>
-	  <input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit', 'jointstheme'); ?>" />
+	  <input name="submit" type="submit" id="submit" class="button" tabindex="0" value="<?php _e('Submit', 'jointstheme'); ?>" />
 	  <?php comment_id_fields(); ?>
 	</p>
 	

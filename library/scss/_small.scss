@@ -69,24 +69,18 @@ style a page via class
 	width: 1px;
 }
 
-/* must have higher specificity than alternative color schemes inline styles */
-.skip-link {
-	background-color: #f1f1f1;
-	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-	color: #21759b;
-	display: block;
-	font: bold 14px/normal "Noto Sans", sans-serif;
-	left: -9999em;
-	outline: none;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	text-transform: none;
-	top: -9999em;
+.screen-reader-text:focus {
+    background: tomato;
+    color: white;
+    box-shadow: none;
+    border-bottom: 0px solid;
 }
 
 .skip-link {
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	font: bold 14px/normal "Open Sans", sans-serif;
+	font-size:1em;
+    font-weight: normal;
+    font-family: "Lato", sans-serif;
+    padding: 1em;
 }
 
 .skip-link:focus {
@@ -114,7 +108,13 @@ style a page via class
 }
 
 #accessible:hover {
-    background: scale-color($contrast-color, $lightness: -14%);
+    background: scale-color($primary-color, $lightness: -14%);
+    color: $ghost;
+}
+
+#accessible:focus {
+     background: scale-color($primary-color, $lightness: -14%);
+    color: $ghost;
 }
 
 #modalOverlay {
@@ -151,22 +151,42 @@ style a page via class
 }
 #modal h1 {
 	text-align:center;
-    color: $oil;
-    background: $contrast-color;
-    font-weight: bold;
+    color: $ghost;
+    background: $primary-color;
+    font-weight: 100;
     display: inline-block;
     width: 30%;
     margin-left: 35%;
+}
+
+#modal a:hover,
+#modal a:focus {
+    border-bottom: 2px solid $oil;
 }
 
 .modalCloseButton {
 	position:absolute;
 	top:10px;
 	right:10px;
-	height:1em;
-    line-height: 5px;
+    padding: 1em;
     text-transform: uppercase;
 }
+
+/* Cookie Bar */
+
+#cookie-bar {background:#111111; height:24px; line-height:24px; color:#eeeeee; text-align:center; padding:3px 0;}
+#cookie-bar.fixed {position:fixed; top:0; left:0; width:100%;}
+#cookie-bar.fixed.bottom {bottom:0; top:auto;}
+#cookie-bar p {margin:0; padding:0;}
+#cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
+#cookie-bar .cb-enable {background:#007700;}
+#cookie-bar .cb-enable:hover {background:#009900;}
+#cookie-bar .cb-disable {background:#990000;}
+#cookie-bar .cb-disable:hover {background:#bb0000;}
+#cookie-bar .cb-policy {background:#0033bb;}
+#cookie-bar .cb-policy:hover {background:#0055dd;}
+
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -282,9 +302,12 @@ NAVIGATION STYLES
 	}
 } 
 
-.title-area h3{
-    margin: 0 5em 0 -5em;
-    padding: 5px 0px;
+h3.site-title{
+    float: left;
+    width: auto;
+    margin-bottom: 0;
+    padding: 0 1em;
+    text-align: center;
    & a {
        color: $ghost;
    }
@@ -477,6 +500,7 @@ COMMENT STYLES
 
 /* h3 comment title */
 #comments {
+    font-weight: 300;
 
 	/* number of comments span */
 	span {}
@@ -544,7 +568,6 @@ COMMENT STYLES
 		margin-left: 10px;
 		margin-top: 0;
 		padding-bottom: 0;
-		background: $secondary-color;
 	}
 
 	li.depth-2 {}
@@ -561,7 +584,11 @@ COMMENT STYLES
 	.even {
 	}
 	.parent {}
-	.comment {}
+	.comment {
+        background: white;
+        border: none;
+        box-shadow: 1px 0px 2px #999;
+    }
 	.children {}
 	.pingback {}
 	.bypostauthor {}

@@ -250,11 +250,12 @@ $info-color: #a0d3e8 !default;      // cornflower
 $contrast-color: #f2f071 !default;  // accessible contrast
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-sans-serif: "Lato", Helvetica, Roboto, Arial, sans-serif !default;
 $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
 
 // We use these to define default font weights
+$font-weight-light: 300 !default;
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 
@@ -262,7 +263,7 @@ $font-weight-bold: bold !default;
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
 $body-font-family: $font-family-sans-serif !default;
-$body-font-weight: $font-weight-normal !default;
+$body-font-weight: $font-weight-light !default;
 $body-font-style: normal !default;
 
 // We use this to control font-smoothing
@@ -421,7 +422,7 @@ $cursor-text-value: text !default;
       padding: 0;
       margin: 0;
       font-family: $body-font-family;
-      font-weight: $body-font-weight;
+      font-weight: $font-weight-light;
       font-style: $body-font-style;
       line-height: $base-line-height; // Set to $base-line-height to take on browser default of 150%
       position: relative;

@@ -8,7 +8,7 @@ $include-html-type-classes: $include-html-classes !default;
 
 // We use these to control header font styles
 $header-font-family: $body-font-family !default;
-$header-font-weight: $font-weight-normal !default;
+$header-font-weight: $font-weight-light !default;
 $header-font-style: normal !default;
 $header-font-color: $jet !default;
 $header-line-height: 1.4 !default;
@@ -83,7 +83,7 @@ $list-line-height: $paragraph-line-height !default;
 $list-margin-bottom: $paragraph-margin-bottom !default;
 $list-style-position: outside !default;
 $list-side-margin: 1.1rem !default;
-$list-ordered-side-margin: 1.4rem !default;
+$list-ordered-side-margin: 0 !default;
 $list-side-margin-no-bullet: 0 !default;
 $list-nested-margin: rem-calc(20) !default;
 $definition-list-header-weight: $font-weight-bold !default;
@@ -222,6 +222,7 @@ $align-class-breakpoints:
       &:hover,
       &:focus {
         color: $anchor-font-color-hover;
+        outline: none;
         @if $anchor-text-decoration-hover != $anchor-text-decoration {
         	text-decoration: $anchor-text-decoration-hover;
         }
@@ -229,6 +230,16 @@ $align-class-breakpoints:
 
       img { border:none; }
     }
+
+    .article-header a:focus,
+    .entry-content a:focus,
+    #sidebar1 a:focus {
+        padding-bottom: 3px;
+        border-bottom: 2px solid #444;
+    }
+
+
+
 
     /* Default paragraph styles */
     p {
